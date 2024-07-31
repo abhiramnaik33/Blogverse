@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In - BlogVerse</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="auth.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html"><h1>BlogVerse</h1></a>
+            </div>
+            <div class="nav-buttons">
+                <button onclick="window.location.href='signup.html'">Sign Up</button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="loginSection">
+            <h2>Log In</h2>
+            <form id="loginForm">
+                <label for="loginEmail">Email:</label>
+                <input type="email" id="loginEmail" name="loginEmail" required>
+                <label for="loginPassword">Password:</label>
+                <input type="password" id="loginPassword" name="loginPassword" required>
+                <button type="submit">Log In</button>
+                <button type="button" id="forgotPasswordButton">Forgot Password</button>
+                <button type="button" id="resetPasswordButton">Reset Password</button>
+
+                <script>
+                    document.getElementById('forgotPasswordButton').addEventListener('click', function() {
+                        // Redirect to the password reset page
+                        window.location.href = 'forgotpassword1.html';
+                    });
+
+                    
+                </script> 
+
+                <script>
+                    document.getElementById('resetPasswordButton').addEventListener('click', function() {
+                        // Redirect to the password reset page
+                        window.location.href = 'reset.html';
+                    });
+
+
+                </script>               
+            </form>
+        </section>
+    </main>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+    
+
+
+
+    <footer>
+        <p>&copy;2024 BlogVerse. All rights reserved.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

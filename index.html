@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlogVerse</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">
+                    <h1>BlogVerse</h1>
+                </a>
+            </div>
+            <div class="nav-buttons">
+                <button onclick="window.location.href='login.html'">Log In</button>
+                <button onclick="window.location.href='signup.html'">Sign Up</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="hero-content">
+                <h2>Welcome to BlogVerse</h2>
+                <p>Discover amazing content, share your thoughts, and connect with a community of like-minded
+                    individuals.</p>
+                <button class="cta-button" id="exploreBlogsBtn" onclick="window.location.href='blogs.html'">Explore
+                    Blogs</button>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>About Us</h2>
+            <p>At BlogVerse, we believe in the power of words and the community they create. Our platform allows you to
+                read, write, and share blogs on a variety of topics.</p>
+            <div class="image-container">
+                <img src="image1.png" alt="Blog Image 1">
+                <img src="image3.png" alt="Blog Image 2">
+                <img src="image2.png" alt="Blog Image 3">
+            </div>
+        </section>
+
+        <section id="authors">
+            <h2>Developers</h2>
+            <div class="author-container">
+
+                <div class="author">
+                    <a href="https://www.linkedin.com/in/sudarshana-v-d/" target="_blank" class="linkedin-link">
+                        <img src="author2.png" alt="Sudarshana V D" class="author-photo">
+                    </a>
+                    <!-- <img src="author2.png" alt="Sudarshana V D "> -->
+                    <h3>Sudarshana V D</h3>
+                    <p>Sudarshana specializes in back-end development, focusing on server-side solutions using Python,
+                        Django. He excels in designing APIs, managing databases, and optimizing server
+                        performance to ensure scalable and efficient applications..</p>
+                </div>
+
+                <div class="author">
+                    <a href="https://www.linkedin.com/in/abhiramgirishnaik/" target="_blank" class="linkedin-link">
+                        <img src="author1.jpg" alt="Abhiram naik" class="author-photo">
+                    </a>
+                    <!-- <img src="author1.jpg" alt="abhiram"> -->
+                    <h3>Abhiram Girish Naik</h3>
+                    <p>Abhiram excels in creating responsive, user-friendly interfaces using HTML, CSS, and JavaScript.
+                        They possess expertise in working with frameworks like React  to build dynamic web
+                        applications, with a strong focus on performance and design</p>
+                </div>
+
+                <!-- Add more author sections as needed -->
+            </div>
+        </section>
+
+        <section id="blogContainer">
+            <!-- Blogs will be dynamically loaded (backend) here  add this if you need peple to see blogs on on the front base page otherwise it will apper whaen clicked on explore blogs button-->
+        </section>
+    </main>
+
+
+
+    <footer>
+        <p>copyright &copy;2024 BlogVerse. All rights reserved </p>
+    </footer>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>

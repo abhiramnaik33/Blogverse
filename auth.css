@@ -1,0 +1,91 @@
+/* Auth Styles */
+#loginSection,
+#signupSection {
+    width: 100%;
+    max-width: 400px; /* Container width */
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    animation: slideIn 0.5s ease-out;
+}
+
+@keyframes slideIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+    animation: fadeIn 1s ease-out;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #555;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #6200ea;
+    box-shadow: 0 0 5px rgba(98, 0, 234, 0.3);
+    outline: none;
+}
+
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background: #6200ea; /* Primary color */
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background: #3700b3; /* Darker shade of the primary color */
+    transform: scale(1.05);
+}
+
+/* Forgot Password Button Styles */
+button[type="button"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background: #f1f1f1; /* Light grey background */
+    color: #333; /* Text color */
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+    margin-top: 10px; /* Space above the button */
+}
+
+button[type="button"]:hover {
+    background: #e0e0e0; /* Slightly darker shade of grey */
+    transform: scale(1.05);
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile - BlogVerse</title>
+    <link rel="stylesheet" href="profile.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="profile.js" defer></script>
+   
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html"><h1>BlogVerse</h1></a>
+            </div>
+            <div class="nav-buttons">
+               
+                <button onclick="window.location.href='index.html'">Log Out</button>
+                <button onclick="window.location.href='index.html'">Home</button>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="profileSection">
+            <div class="profile-info">
+                <img id="profilePic" src="profile.png" alt="Profile Picture"> 
+                <!-- remove src -edit option for photo check onence -->
+                <h2 id="userName">user name from backend </h2>
+            </div>
+            
+            <section id="userBlogs">
+                <h3>My Blogs</h3>
+                <!-- User's blogs will be dynamically loaded here -->
+            </section>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy;2024 BlogVerse. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
